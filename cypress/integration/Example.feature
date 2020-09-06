@@ -1,8 +1,7 @@
-Feature: The Page
+Feature: Example
 
-    I want to open a social network page
+    I want to open the template example
 
     @focus
-    Scenario: Opening a social network page
-        Given I open Google page
-# Then I see "google" in the title
+    Scenario: Opening the app
+        Given I open the Template app
