@@ -13,9 +13,14 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "cy:headless": "./node_modules/.bin/cypress run",
+    "cy:browser": "./node_modules/.bin/cypress run --headed --no-exit",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -31,5 +36,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "cypress": "^5.1.0",
+    "cypress-cucumber-preprocessor": "^2.5.5"
   }
 }
